@@ -326,11 +326,12 @@
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [],
                                                 "borderRadius": "10",
-                                                "boxShadow": "VARIANT1"
+                                                "boxShadow": "VARIANT1",
+                                                "shouldScrollContents": true
                                             },
                                             {
                                                 "isVisible": "{{getFeedback.data ? true : false}}",
-                                                "text": "<h2 style=\"text-align: center; color:#1D7FBD; font-size:24px\">Feedback</h2>{{getFeedback.data}}\n",
+                                                "text": "<h2 style=\"text-align: center; color:#1D7FBD; font-size:24px\">Feedback</h2>\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg\" style=\"width:7%; position:absolute; top:10px;right:10px\">{{getFeedback.data}}\n",
                                                 "fontSize": "PARAGRAPH",
                                                 "fontStyle": "",
                                                 "textAlign": "LEFT",
