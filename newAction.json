@@ -1,0 +1,86 @@
+[
+    {
+        "_id": "65b8ffb6059f3c8e51bd4fba",
+        "applicationId": "get-feedback-ui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getFeedback",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/getFeedback"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": "180000",
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "",
+                "body": "{\n  \"openAIKey\": {{JSON.stringify(key_input.text)}},\n\t\"model\": {{JSON.stringify(model_select.selectedOptionValue)}},\n\t\"post\": {{JSON.stringify(post_input.text)}},\n\t\"website\": {{JSON.stringify(website_input.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(key_input.text)",
+                "JSON.stringify(model_select.selectedOptionValue)",
+                "JSON.stringify(post_input.text)",
+                "JSON.stringify(website_input.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-01-30T13:55:02.785Z",
+        "updatedAt": "2024-02-08T14:54:32.028Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]
