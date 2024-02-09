@@ -40,7 +40,7 @@
                     }
                 ],
                 "path": "",
-                "body": "{\n  \"openAIKey\": {{JSON.stringify(key_input.text)}},\n\t\"model\": {{JSON.stringify(model_select.selectedOptionValue)}},\n\t\"post\": {{JSON.stringify(post_input.text)}},\n\t\"website\": {{JSON.stringify(website_input.text)}}\n}"
+                "body": "{\n  \"openAIKey\": {{JSON.stringify(key_input.text)}},\n\t\"model\": {{JSON.stringify(model_select.selectedOptionValue)}},\n\t\"post\": {{JSON.stringify(post_input.text)}},\n\t\"audience\": {{JSON.stringify(audience_input.text)}},\n\t\"website\": {{JSON.stringify(website_input.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -57,13 +57,14 @@
                 "JSON.stringify(key_input.text)",
                 "JSON.stringify(model_select.selectedOptionValue)",
                 "JSON.stringify(post_input.text)",
+                "JSON.stringify(audience_input.text)",
                 "JSON.stringify(website_input.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-30T13:55:02.785Z",
-        "updatedAt": "2024-02-08T16:57:59.858Z",
+        "updatedAt": "2024-02-09T09:48:14.503Z",
         "deleted": false,
         "policies": [
             {
