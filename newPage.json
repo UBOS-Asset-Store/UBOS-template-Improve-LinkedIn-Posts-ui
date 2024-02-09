@@ -400,7 +400,8 @@
                                                                                     {
                                                                                         "key": "isDisabled"
                                                                                     }
-                                                                                ]
+                                                                                ],
+                                                                                "placeholderText": "software developers and businesses looking to create AI applications"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
